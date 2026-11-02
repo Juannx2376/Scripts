@@ -70,6 +70,14 @@ cd "File Encryption"
 python file_encryption.py
 ```
 
+### OSINT Tool
+A domain reconnaissance tool that collects public information: IP resolution, DNS records (MX/TXT/NS/A/AAAA), subdomain discovery, HTTP headers, and WHOIS. Requires `pip install dnspython requests python-whois`.
+
+```bash
+cd "OSINT Tool"
+python osint_tool.py
+```
+
 ## Requirements
 
 - Python 3
