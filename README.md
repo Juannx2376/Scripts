@@ -54,6 +54,14 @@ Small Linux enumeration helpers, such as finding SUID binaries — a classic pri
 python "Escalada de Privilegios/Linux/escalada.py"
 ```
 
+### Password Manager
+A command-line password manager with real encryption (PBKDF2 + Fernet). Stores passwords encrypted in an auto-generated vault, protected by a master password that is never saved anywhere. Requires `pip install cryptography`.
+
+```bash
+cd "Password Manager"
+python password_manager.py
+```
+
 ## Requirements
 
 - Python 3

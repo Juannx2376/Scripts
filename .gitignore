@@ -14,6 +14,11 @@ wraith_report.html
 *_report.json
 *_report.html
 
+# Password Manager vault (encrypted passwords + salt — never commit)
+.password_manager/
+*.bin
+boveda.json
+
 # OS / editor
 .DS_Store
 Thumbs.db
