@@ -62,6 +62,14 @@ cd "Password Manager"
 python password_manager.py
 ```
 
+### File Encryptor
+A command-line tool to encrypt/decrypt any file with a password (PBKDF2 + Fernet, per-file salt). Produces a `.enc` file that can only be restored with the correct password. Requires `pip install cryptography`.
+
+```bash
+cd "File Encryption"
+python file_encryption.py
+```
+
 ## Requirements
 
 - Python 3

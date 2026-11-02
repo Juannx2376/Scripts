@@ -19,6 +19,9 @@ wraith_report.html
 *.bin
 boveda.json
 
+# File Encryptor test artifacts
+*.enc
+
 # OS / editor
 .DS_Store
 Thumbs.db
