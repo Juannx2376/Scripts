@@ -7,29 +7,29 @@ from cryptography.hazmat.primitives import hashes
 from getpass import getpass
 
 def cifrar_archivo(ruta, password):
-    salt = os.urandom(16)                    # combinación nueva para ESTE archivo
+    salt = os.urandom(16)                   
     llave = derivar_llave(password, salt)
     f = Fernet(llave)
 
-    datos = Path(ruta).read_bytes()          # leo el archivo como bytes
-    cifrado = f.encrypt(datos)               # lo cifro
+    datos = Path(ruta).read_bytes()          
+    cifrado = f.encrypt(datos)               
 
-    Path(ruta + ".enc").write_bytes(salt + cifrado)   # guardo salt + cifrado juntos
+    Path(ruta + ".enc").write_bytes(salt + cifrado)  
     print(f"Archivo cifrado: {ruta}.enc")
 
 def descifrar_archivo(ruta, password):
-    contenido = Path(ruta).read_bytes()      # leo todo el .enc
+    contenido = Path(ruta).read_bytes()      
 
-    salt = contenido[:16]                    # los primeros 16 bytes = el salt
-    cifrado = contenido[16:]                 # del byte 16 en adelante = los datos
+    salt = contenido[:16]                    
+    cifrado = contenido[16:]                 
 
-    llave = derivar_llave(password, salt)    # recreo la MISMA llave (salt + password)
+    llave = derivar_llave(password, salt)   
     f = Fernet(llave)
 
-    datos = f.decrypt(cifrado)               # descifro
+    datos = f.decrypt(cifrado)               
 
-    ruta_salida = ruta.replace(".enc", "")   # le quito el .enc al nombre
-    Path(ruta_salida).write_bytes(datos)     # guardo el archivo original recuperado
+    ruta_salida = ruta.replace(".enc", "")   
+    Path(ruta_salida).write_bytes(datos)     
     print(f"Archivo descifrado: {ruta_salida}")
 
 
