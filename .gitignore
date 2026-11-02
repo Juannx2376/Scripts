@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# WRAITH generated reports (may contain scan data of local networks/hosts)
+wraith_report.json
+wraith_report.html
+*_report.json
+*_report.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
