@@ -23,7 +23,7 @@ boveda.json
 *.enc
 
 # Steganography test images
-Esteganogradia/*.png
+Esteganografia/*.png
 
 # OS / editor
 .DS_Store

@@ -62,7 +62,7 @@ python osint_tool.py
 Hide secret text messages inside images using LSB (Least Significant Bit) steganography — invisible to the eye. Also reveals hidden messages. Requires `pip install Pillow`.
 
 ```bash
-cd Esteganogradia
+cd Esteganografia
 python esteganografia.py
 ```
 
