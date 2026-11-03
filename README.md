@@ -66,6 +66,14 @@ cd Esteganografia
 python esteganografia.py
 ```
 
+### Encrypted Chat
+A client/server chat with end-to-end encryption (sockets + threading + Fernet). Messages travel as ciphertext; both peers derive the key from a shared password. Requires `pip install cryptography`.
+
+```bash
+cd "Chat Cifrado"
+python chat_cifrado.py
+```
+
 ## Requirements
 
 - Python 3
