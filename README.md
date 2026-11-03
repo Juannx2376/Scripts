@@ -6,26 +6,6 @@ A personal collection of Python scripts for learning network security, reconnais
 
 ## Contents
 
-### WRAITH
-A multiplatform (Windows/Linux) network reconnaissance and vulnerability analysis suite with an interactive, text-based console. Built with the Python standard library (no external dependencies required for the core). Features:
-
-- **netscan** — Local network discovery (ping sweep + ARP table + host fingerprinting by TTL/OUI/open ports)
-- **portscan** — TCP/UDP port scanning with banner grabbing
-- **service detection** — Version detection via protocol-specific banner grabbing (`-sV` equivalent)
-- **vulnerability analysis** — Cross-references detected products/versions against a local CVE database, plus non-intrusive recon checks (headers, TLS, SMBv1/EternalBlue detection, etc.)
-- **web audit** — Basic web checks (paths, headers, cookies, CORS, methods)
-- **privesc** — Local privilege-escalation audit
-- **password audit** — Password strength evaluation
-- **hash cracking** — Dictionary and short brute-force auditing of hashes
-- **monitor** — Active connections + WiFi network listing
-- **reports** — Exports results to HTML / JSON
-
-Run it:
-```bash
-cd WRAITH
-python main.py
-```
-
 ### PortScanner
 A simple port scanner built with [python-nmap](https://pypi.org/project/python-nmap/).
 
@@ -76,6 +56,14 @@ A domain reconnaissance tool that collects public information: IP resolution, DN
 ```bash
 cd "OSINT Tool"
 python osint_tool.py
+```
+
+### Steganography Tool
+Hide secret text messages inside images using LSB (Least Significant Bit) steganography — invisible to the eye. Also reveals hidden messages. Requires `pip install Pillow`.
+
+```bash
+cd Esteganogradia
+python esteganografia.py
 ```
 
 ## Requirements

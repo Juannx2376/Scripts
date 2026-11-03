@@ -22,6 +22,9 @@ boveda.json
 # File Encryptor test artifacts
 *.enc
 
+# Steganography test images
+Esteganogradia/*.png
+
 # OS / editor
 .DS_Store
 Thumbs.db
