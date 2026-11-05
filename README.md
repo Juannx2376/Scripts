@@ -74,6 +74,14 @@ cd "Chat Cifrado"
 python chat_cifrado.py
 ```
 
+### Hash Cracker
+A hash identifier + dictionary-attack cracker (MD5/SHA1/SHA256/SHA512). Identifies the hash type and brute-forces it against a wordlist. Standard library only.
+
+```bash
+cd "Hash Cracker"
+python hash_cracker.py
+```
+
 ## Requirements
 
 - Python 3
