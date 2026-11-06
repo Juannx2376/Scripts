@@ -82,6 +82,14 @@ cd "Hash Cracker"
 python hash_cracker.py
 ```
 
+### 2FA TOTP Generator
+A time-based one-time password generator (RFC 6238) — the same 6-digit codes as Google Authenticator, with a live countdown. Verified against the official test vectors. Standard library only.
+
+```bash
+cd "2FA TOTP"
+python 2fa_totp.py
+```
+
 ## Requirements
 
 - Python 3
