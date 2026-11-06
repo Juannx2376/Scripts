@@ -90,6 +90,14 @@ cd "2FA TOTP"
 python 2fa_totp.py
 ```
 
+### Log Analyzer
+Scans SSH-style auth logs and detects brute-force attacks — IPs with many failed logins over a threshold. Regex + `Counter`; includes a sample log. The defensive/blue-team side. Standard library only.
+
+```bash
+cd "Log Analyzer"
+python log_analyzer.py
+```
+
 ## Requirements
 
 - Python 3
